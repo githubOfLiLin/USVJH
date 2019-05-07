@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:50px;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="YimaEncSDK/YimaEncSDK.js" type="text/javascript"></script>--> 
+    <!-- <link href="YimaEncSDK/css/mapcss.css" rel="stylesheet" type="text/css" />-->
+    <!-- <link rel="stylesheet" href="./mainmap.css">  -->
+    <title>USVJH</title>
+</head>
+<body>
+    <!-- 菜单栏 -->
+    <div class="menu">
+        <ul>
+            <li>
+                <div class="tool_btn" title="通信"><img class="tool_icon" src="../image/images1/wifi-.png" alt=""><span class="slicer"></span></div>
+            </li>
+            <li>
+                    <div class="tool_btn" title="截屏"><img id="screenshot" class="tool_icon def_btn" src="../image/images1/cut-.png" alt=""><span class="slicer"></span></div>
+                </li>
+            <li>
+                <div class="tool_btn" title="电子方位线"><img id="elec_bearline" class="tool_icon def_btn" src="../image/images1/angle.png" alt=""></div>
+            </li>
+            <li>
+                <div class="tool_btn" title="测距"><img id="measure" class="tool_icon def_btn" src="../image/images1/ruler.png" alt=""></div>
+            </li>
+            <li>
+                <div class="tool_btn" title="添加锚点"><img id="anchor" class="tool_icon def_btn" src="../image/images1/point.png" alt=""></div>
+            </li>
+            <li>
+                <div class="tool_btn" title="清除锚点"><img id="clean_anchor" class="tool_icon def_btn" src="../image/images1/line.png" alt=""><span class="slicer"></span></div>
+            </li>
+            <li>
+                    <div class="tool_btn" title="添加平行线"><img class="tool_icon def_btn" src="../image/images1/lineM.png" alt=""></div>
+                </li>
+            <li>
+                    <div class="tool_btn" title="添加折线"><img class="tool_icon def_btn" src="../image/images1/lineG.png" alt=""></div>
+                </li>
+            <li>
+                    <div class="tool_btn" title="居中模式"><img class="tool_icon def_btn" src="../image/images1/center.png" alt=""><span class="slicer"></span></div>
+                </li>
+            <li>
+                    <div class="tool_btn" title="规划航线"><img class="tool_icon def_btn" src="../image/images1/drawline.png" alt=""></div>
+                </li>
+            <li>
+                    <div class="tool_btn" title="清除当前航线"><img class="tool_icon def_btn" src="../image/images1/clearCurLine.png" alt=""></div>
+                </li>
+            <li>
+                    <div class="tool_btn" title="清除所有航线"><img class="tool_icon def_btn" src="../image/images1/clearAllLine.png" alt=""><span class="slicer"></span></div>
+                </li>
+                <li>
+                    <div class="tool_btn login_btn" ><img class="tool_icon" src="../image/images1/ship.png" alt="">
+                        <span class="user" title="user"></span>
+                        <span class="drop-out" title="退出"></span></div>
+                </li>
+        </ul>
+    </div>
+    <!-- 地图 -->
+    <div class="center">
+        <div class="mapandcanvas">
+            <div id="map"></div>
+            <canvas id="map_canvas"></canvas>
+        </div>
+        <div class="rightmenu" id="rightmenu">
+            <div class="rightmenu_slicer"></div>
+            <div class="rightmenu_cont">
+                <h2>rightmenu</h2>
+                <div class="class_rm">
+                    <h3 class="class_rm_title">航线信息</h3>
+                    <div class="class_rm_cont">内容</div>
+                </div>
+                <div class="class_rm">
+                        <h3 class="class_rm_title">仿真设置</h3>
+                        <div class="class_rm_cont">内容
+                        </div>    
+                    </div>
+            </div>
+            </div>
+    </div>
+    
+    <!-- 状态栏 -->
+    <div class="status"></div>
+
+    <script>
+        // var sMainLayout=document.createElement("script");
+        // sMainLayout.type="text/javascript";
+        // sMainLayout.src="./event/mainlayout.js";
+        // document.getElementsByTagName("body")[0].appendChild(sMainLayout);
+        // sMainLayout.onload=function(){
+        //     var sToolBar=document.createElement("script");
+        //     sToolBar.type="text/javascript";
+        //     sToolBar.src="./event/toolbar_event.js";
+        //     document.getElementsByTagName("body")[0].appendChild(sToolBar);
+        // }
+    </script>
+     <script src="./YimaEncSDK/YimaEncSDK.js" type="text/javascript"></script>
+     <!-- <script src="./mainmapbundle.js"></script> -->
+    <!-- ***只有Firefox和Opra浏览器会按照我们制定的顺序加载和执行script标签，
+        其他浏览器都会按照从服务端返回的顺序加载执行 ***-->
+</body>
+</html>
